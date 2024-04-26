@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-logo{
+    display: flex;
+    justify-content: end;
+    margin-right: 5px;
+}
+img{
+    cursor: pointer;
+}

@@ -1,9 +1,15 @@
+import React from 'react';
 import aberto from './Aberto.svg';
-const Aberto = () => {
+import fechado from './Fechado.svg';
+import './Aberto.css';
+
+const Aberto = ({ toggleMenu, isOpen }) => {  
     return (
         <div className='container-logo'>
-        <img src={aberto} alt='logo-marca'></img>
-      </div>
+            <img onClick={toggleMenu} src={isOpen ? aberto : fechado} alt='logo-marca' />
+
+        </div>
     );
 }
+
 export default Aberto;
